@@ -2,7 +2,7 @@
 @section('content')
     <div class="container custom-login">
         <div class="row">
-            <div class="col-ms-4">
+            <div class="col-sm-4">
                 <form action="login", method="POST">
                     <div class="mb-3">
                       @csrf
