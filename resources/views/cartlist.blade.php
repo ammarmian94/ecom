@@ -8,7 +8,7 @@
             <div class="trending-wrapper">
                 <h1>Products in the Cart</h1>
                 @foreach ($products as $item)
-                    <div class="row">
+                    <div class="row cart-list-divider">
                         <div class="col-sm-3">
                             <a href="detail/{{ $item->id }}">
                                 <img class="trending-img" src="{{ $item->gallery }}">
@@ -21,7 +21,7 @@
                                 </div>
                         </div>
                         <div class="col-sm-3">
-                            <button class="btn btn-warning">Remove from Cart</button>
+                            <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Remove from Cart</a>
                         </div>
                     </div>
                 @endforeach
